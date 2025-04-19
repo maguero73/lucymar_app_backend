@@ -19,5 +19,8 @@ public class TitularController {
     @GetMapping
     public List<Titular> listarTitulares() {
         return titularRepository.findAll();
+
+
+
     }
 }
