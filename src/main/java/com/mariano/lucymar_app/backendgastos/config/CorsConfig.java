@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**") // ruta de tu controlador
-                        .allowedOrigins("http://192.168.0.9:8081") // IP de tu frontend
+                        .allowedOrigins("http://192.168.0.9:8081", "http://localhost:8081") // IP de tu frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
