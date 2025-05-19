@@ -14,7 +14,8 @@
                 @Override
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/api/**") // ruta de tu controlador
-                            .allowedOriginPatterns("http://localhost:8081") // IP de tu frontend
+                            .allowedOriginPatterns("http://localhost:8081") // front docker
+                            .allowedOriginPatterns("http://localhost:8083") // frontend local
                             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                             .allowedHeaders("*")
                             .allowCredentials(false); // si vas a usar cookies o auth headers
